@@ -1,0 +1,23 @@
+
+<div class="newPostButtonBox">
+  <button class='btn' type="button" name="button" onclick="window.location.assign('/new')">Create Post</button>
+  <h6>New Post Message</h6>
+</div>
+
+<ul class='postList'>
+  {{#each posts}}
+    <li class="postItem">
+      <div class="postItemDiv orderly">
+        <a href="../post/{{this.id}}">
+          <div>
+            <h1>{{this.title}}</h1>
+            <h3>{{this.subtitle}}</h3>
+          </div>
+        </a>
+        <h4>{{this.author_id}}</h4>
+      </div>
+    </li>
+
+
+  {{/each}}
+</ul>
